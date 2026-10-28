@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --dora-blue: #0096E6;
+    --dora-deep: #0072B5;
+    --dora-sky: #EBF6FF;
+    --dora-canvas: #F4FAFF;
+    --dora-red: #E60012;
+    --dora-yellow: #FFD700;
+    --dora-pink: #FF5C8D;
+  }
+
+  body {
+    font-family: 'Zen Maru Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #F4FAFF;
+    color: #0B2239;
+    overflow-x: hidden;
+  }
+}
+
+.font-serif-jp {
+  font-family: 'Shippori Mincho', serif;
+}
+
+.font-mono-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.writing-vertical-jp {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+}
+
+@keyframes bellSwing {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(18deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-6deg);
+  }
+}
+
+@keyframes portalPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.06);
+    opacity: 1;
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 4.5s ease-in-out infinite;
+}
+
+.animate-bell-swing {
+  animation: bellSwing 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.animate-portal-pulse {
+  animation: portalPulse 3s ease-in-out infinite;
+}
+

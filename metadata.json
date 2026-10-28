@@ -1,0 +1,6 @@
+{
+  "name": "RAN 19th Birthday - ドラえもん＆USJドリーム特別記念サイト",
+  "description": "19歳を迎えるらんちゃんへ贈る、ドラえもんのひみつ道具とユニバーサル・スタジオ・ジャパンの夢が詰まったインタラクティブ・バースデーウェブサイト。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
